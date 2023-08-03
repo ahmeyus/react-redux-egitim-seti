@@ -29,7 +29,7 @@ function Admin() {
 
 			<Box mt="10">
 				<Switch>
-					<Route exact path={path} component={Home} />
+					<Route exact path={path} component={Home} />   //exact tanımı kaldırıldığında sadece admin/home görünüyor
 					<Route path={`${path}/orders`} component={Orders} />
 					<Route path={`${path}/products`} component={Products} />
 				</Switch>
