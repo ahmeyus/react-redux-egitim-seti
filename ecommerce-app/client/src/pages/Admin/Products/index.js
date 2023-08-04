@@ -17,7 +17,7 @@ function Products() {
 
 	const deleteMutation = useMutation(deleteProduct, {
 		onSuccess: () => queryClient.invalidateQueries("admin:products"),
-	});
+	}); //ürünler silindikten sonra sayfanın yenilenmesi için ihtiyaç.
 
 	const columns = useMemo(() => {
 		return [
